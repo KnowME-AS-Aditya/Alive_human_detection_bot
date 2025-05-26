@@ -44,8 +44,8 @@ This project leverages **ESP32**, multiple sensors, and cloud tools like **MQTT*
 ## 📸 Screenshots
 
 ### MODEL_BOT [codenamed: *SANJIVANI*]
-![Anterior view](images/dashboard.png)
-![Lateral View](images/dashboard.png)
+![Anterior view]("images/WhatsApp Image 2025-03-26 at 22.09.55_dbf37828 (1).jpg")
+![Lateral View]("images/WhatsApp Image 2025-03-26 at 22.09.55_0728a40a.jpg")
 
 
 
