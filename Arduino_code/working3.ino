@@ -20,12 +20,12 @@ const long publishInterval = 3000;  // Publish every 3 seconds
 MAX30105 particleSensor;
 
 // WiFi & MQTT Credentials
-const char* ssid = "pi14";
-const char* password = "1234567890";
-const char* mqtt_server = "f5100f9ce8424e979144215dbe0aa1d7.s1.eu.hivemq.cloud";
+const char* ssid = "YOUR_WiFi_NAME";
+const char* password = "Wi-Fi Network Password";
+const char* mqtt_server = "testId.s1.eu.hivemq.cloud";
 const int mqtt_port = 8883;
 const char* mqtt_user = "ESP_valid";
-const char* mqtt_password = "jfvyzm9ZhJuz9Am";
+const char* mqtt_password = "***********";
 
 // MQTT Client Setup
 WiFiClientSecure espClient;
@@ -37,6 +37,7 @@ void setup() {
   pinMode(TRIG_PIN, OUTPUT);
   pinMode(ECHO_PIN, INPUT);
 
+  //Heart Sensor STD I2C Dtection
   if (!particleSensor.begin(Wire, I2C_SPEED_STANDARD)) {
     Serial.println("Error: MAX30102 Not Found!");
   } else {
@@ -60,7 +61,7 @@ void setup() {
   client.setServer(mqtt_server, mqtt_port);
   connectMQTT();
 }
-
+//MQTT protocol setup through HiveMQ
 void connectMQTT() {
   while (!client.connected()) {
     Serial.println("Connecting to HiveMQ...");
@@ -75,6 +76,7 @@ void connectMQTT() {
   }
 }
 
+//HC-SR05 Pulse emit
 float getUltrasonicDistance() {
   digitalWrite(TRIG_PIN, LOW);
   delayMicroseconds(2);
@@ -82,7 +84,7 @@ float getUltrasonicDistance() {
   delayMicroseconds(10);
   digitalWrite(TRIG_PIN, LOW);
   long duration = pulseIn(ECHO_PIN, HIGH);
-  return duration * 0.0343 / 2;
+  return duration * 0.0343 / 2; //ECHO pulse
 }
 
 void loop() {
@@ -116,12 +118,13 @@ void loop() {
     Serial.print(", BPM: ");
     Serial.println(bpm);
     Serial.println("---------------------");
-
+    /*
     // ✅ **Print Data in Serial Plotter Format**
     Serial.print("PIR="); Serial.print(pir_value); Serial.print("  ");
     Serial.print("Distance="); Serial.print(ultrasonic_distance); Serial.print("  ");
     Serial.print("Gas="); Serial.print(gas_level); Serial.print("  ");
     Serial.print("BPM="); Serial.println(bpm);  // **New Line Ensures Correct Plotting!**
+    */
 
     // Format JSON & Publish to MQTT
     StaticJsonDocument<256> doc;
