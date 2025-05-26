@@ -6,7 +6,7 @@ An IoT-based system to detect living humans using multiple sensors with real-tim
 ![GitHub last commit](https://img.shields.io/github/last-commit/KnowME-AS-Aditya/Alive_human_detection_bot)
 ![License](https://img.shields.io/github/license/KnowME-AS-Aditya/Alive_human_detection_bot)
 
-> 🏆 First Prize Winner @ **IOTMANIA**, Elysium 2025, SOA University — presented by **SOA Flight Club**  
+> 🏆 First Prize Winner @ **IOTMANIA**, Elysium 2025, SOA University — presented by **SOA Flying Community**  
 > An IoT system capable of **detecting living humans in hazardous environments** using multiple sensors and real-time dashboards.
 
 ---
