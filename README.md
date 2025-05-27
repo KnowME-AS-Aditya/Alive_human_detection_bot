@@ -109,7 +109,7 @@ Licensed under the [Apache 2.0](LICENSE)
 
 ## 💬 Acknowledgements
 
-- SOA Flight Club & IOTMANIA 2025 Judges, Elysium 2025
+- SOA Flying Community & IOTMANIA 2025 Judges, Elysium 2025
 - Open source contributors (Arduino, MQTT, Grafana)
 
 ---
