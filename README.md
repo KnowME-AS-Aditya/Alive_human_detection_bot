@@ -103,7 +103,7 @@ Alive_human_detection_bot/
 
 ## 🪪 License
 
-Licensed under the [Apacahe 2.0](LICENSE)
+Licensed under the [Apache 2.0](LICENSE)
 
 ---
 
