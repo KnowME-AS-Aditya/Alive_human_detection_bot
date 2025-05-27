@@ -49,8 +49,9 @@ This project leverages **ESP32**, multiple sensors, and cloud tools like **MQTT*
 
 
 
-### 🔍 Grafana Dashboard Sample
+### 🔍 Grafana Dashboard
 ![Dashboard Screenshot](images/Screenshot%202025-03-26%20082501.png)
+![Dashboard Screenshot](images/db2)
 
 
 ---
