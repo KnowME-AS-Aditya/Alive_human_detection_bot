@@ -57,17 +57,17 @@ This project leverages **ESP32**, multiple sensors, and cloud tools like **MQTT*
 ---
 
 ## 🔩 Folder Structure
-Alive_human_detection_bot/
-├── Arduino_code/ # ESP32 Arduino code (.ino)
-│ └── working3.ino
-├── Grafana_Dashboard_sample/ # JSON files for sensor dashboards
-│ └── SensorOutDashboard.json
-├── images/ # Screenshots and setup images
-│ └── *.png, *.jpg
-├── docs/ # (Optional) Circuit diagrams or project flow
-│ └── architecture.png
-├── LICENSE
-├── README.md
+Alive_human_detection_bot/  
+├── Arduino_code/ # ESP32 Arduino code (.ino)  
+│ └── working3.ino  
+├── Grafana_Dashboard_sample/ # JSON files for sensor dashboards  
+│ └── SensorOutDashboard.json  
+├── images/ # Screenshots and setup images  
+│ └── *.png, *.jpg  
+├── docs/ # (Optional) Circuit diagrams or project flow  
+│ └── architecture.png  
+├── LICENSE  
+├── README.md  
 
 ---
 
